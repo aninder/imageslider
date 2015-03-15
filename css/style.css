@@ -1,0 +1,142 @@
+* {
+    margin:0;
+    padding:0;
+    outline:0;
+    list-style: none;
+    border:none;
+}
+body {
+background: -webkit-gradient(linear, 0 50%, 0 100%, from(white), to(lightblue));
+
+background: -webkit-linear-gradient(top, white, white, lightblue);
+background: -moz-linear-gradient(top, white, white, lightblue);
+background: -o-linear-gradient(top, white, white, lightblue);
+background: -ms-linear-gradient(top, white, white, lightblue);
+
+background: linear-gradient(to bottom, white, white, lightblue);
+    font-family:'Arial', sans-serif;
+}
+#container {
+    width:718px;
+    overflow: hidden;
+    margin:40px auto;
+/*    margin-left : 40px;*/
+}
+h1 {
+     color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*ul.thumbs {*/
+/*  as it contains only floated elements the height will collapse to nothning  */
+/*    width:10px;*/
+/*    display:block;*/
+/*    height:20px;*/
+/*    overflow:hidden;*/
+/*}*/
+ul.thumbs li {
+     float:left;
+     margin-bottom: 10px;
+     margin-right:10px;
+}
+
+ul.thumbs a {
+    display: block;
+    position:relative;
+    width:85px;
+    height:75px;
+/*    border:4px solid transparent;*/
+    padding:4px;
+    color: #515151;
+    text-decoration: none;
+/*    text-shadow: 4px 5px 0px rgba(255,255,255,0.6);*/
+/*    text-shadow: horizontal-offset vertical-offset blur color;*/
+/*    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);*/
+/*    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);*/
+/*
+    text-shadow: 0px 3px 0px #b2a98f,
+             0px 14px 10px rgba(0,0,0,0.15),
+             0px 24px 2px rgba(0,0,0,0.1), 
+             0px 34px 30px rgba(0,0,0,0.1);
+*/
+/*
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+*/
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+ul.thumbs li a:hover span {
+    position:absolute;
+    z-index:101;
+    bottom:-30px;
+    left:-22px;
+    display: block;
+    width:100px;
+    height:25px;
+    text-align: center;
+    border-radius:3px;
+/*
+    -webkit-box-shadow:0px 1px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow:0px 1px 0px rgba(0,0,0,0.4);
+    box-shadow:0px 1px 0px rgba(0,0,0,0.4);
+*/
+/*    background: -webkit-linear-gradient(top,#fff 0%,#bcbcbc 100%);*/
+/*    background: -webkit-gradient(linear, left top, right top, from(#1a82f7), to(#2F2727));*/
+/*     background: -webkit-gradient(linear, left top, right top, from(#2F2727), color-stop(0.25, #1a82f7), color-stop(0.5, #2F2727), color-stop(0.75, #1a82f7), to(#2F2727));*/
+    
+      background: -webkit-gradient(linear, left top, right top, from(#2F2727), color-stop(0.05, #1a82f7), color-stop(0.5, #2F2727), color-stop(0.95, #1a82f7), to(#2F2727));
+
+}
+
+ul.thumbs li a:hover span:before {
+    width:0;
+    height:0;
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    content:"";
+    position: absolute;
+    top:-5px;
+    left:44px;
+}
+
+
+
+ul.thumbs li:first-child a:hover span {
+    left:-3px;
+}
+ul.thumbs li:first-child a:hover span:before {
+    left:25px;
+}
+
+ul.thumbs img {
+    border:4px solid #333;
+}
+
+ul.slides {
+    clear:both;
+    overflow: hidden;
+    border:4px solid
+}
+
+ul.slides, ul.slides li, ul.slides img {
+    height:350px;
+    width: 705px;
+    position:relative;
+}
+
+
